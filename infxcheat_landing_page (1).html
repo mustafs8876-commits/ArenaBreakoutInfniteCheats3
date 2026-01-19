@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INFXCHEAT — Arena Breakout</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#071a2f;
+  --bg2:#0b2747;
+  --accent:#1fb6ff;
+  --accent2:#00e5ff;
+  --text:#eaf6ff;
+  --muted:#8fb3d9;
+  --card:#0e355f;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui;background:radial-gradient(1200px 600px at 70% -200px,#0e4b8a,transparent),var(--bg);color:var(--text)}
+a{text-decoration:none;color:inherit}
+
+/* animations */
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+@keyframes glow{0%{box-shadow:0 0 0 rgba(31,182,255,0)}50%{box-shadow:0 0 30px rgba(31,182,255,.5)}100%{box-shadow:0 0 0 rgba(31,182,255,0)}}
+
+header{padding:24px 64px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:700;color:var(--accent)}
+.lang{opacity:.7}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;padding:40px 64px 80px}
+.hero h1{font-size:40px;margin:0}
+.hero h2{font-weight:500;color:var(--muted);margin:12px 0}
+.price{font-size:28px;font-weight:700;margin:24px 0}
+.buy{display:inline-block;padding:14px 28px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#00324f;font-weight:700;animation:glow 3s infinite}
+.buy:hover{transform:translateY(-2px)}
+
+.preview{animation:float 6s ease-in-out infinite}
+.preview{position:relative}
+.preview img{width:100%;border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.preview.second{position:absolute;right:440px;top:20px;width:230px;height:220px;border-radius:24px;background-image:url('https://static.tildacdn.com/tild3632-6536-4130-b230-353634343664/_.png');background-size:cover;background-position:center;opacity:.75;filter:blur(.2px);animation:float 8s ease-in-out infinite, glow 6s infinite}
+
+section{padding:64px}
+section h3{font-size:28px;margin-bottom:24px}
+
+.block{background:linear-gradient(180deg,var(--card),#0b2b4d);border-radius:20px;padding:32px;margin-bottom:32px}
+.block h4{margin:0 0 16px;font-size:20px;color:var(--accent)}
+.block ul{margin:0;padding-left:18px;line-height:1.7}
+.block li{color:var(--muted)}
+
+.subs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.sub{background:linear-gradient(180deg,#0f3b6a,#0a2848);border-radius:20px;padding:32px;text-align:center;transition:.3s}
+.sub:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.sub h5{margin:0;font-size:18px}
+.sub .p{font-size:24px;font-weight:700;margin:16px 0}
+.sub button{width:100%;padding:14px;border:0;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));font-weight:700;cursor:pointer}
+
+footer{text-align:center;padding:32px;color:var(--muted);border-top:1px solid rgba(255,255,255,.05)}
+
+@media(max-width:900px){
+  header,.hero,section{padding:24px}
+  .hero{grid-template-columns:1fr}
+  .subs{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">INFXCHEAT</div>
+  <div class="lang">RUS / ENG</div>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>INFXCHEAT</h1>
+    <h2>Arena Breakout: Infinite</h2>
+    <div class="price">от 60₽</div>
+    <a class="buy" href="https://t.me/INFXTEAMbot">БЫСТРАЯ ПОКУПКА</a>
+  </div>
+  <div class="preview">
+        <div class="preview second"></div>
+  </div>
+</div>
+
+<section>
+  <h3>Описание</h3>
+  <div class="block">
+    <p style="color:var(--muted);line-height:1.7">
+      INFXCHEAT открывает новый уровень геймплея в Arena Breakout. Четкая визуализация, продуманные функции и гибкие настройки дают решающее преимущество в любых условиях боя.
+    </p>
+  </div>
+
+  <h3>Функционал</h3>
+  <div class="block">
+    <h4>Игроки / Боты / Радар / Лут / Аимбот</h4>
+    <ul>
+      <li>ESP 2D / 3D / Skeleton</li>
+      <li>Radar с настройками</li>
+      <li>Loot-фильтр по цене и редкости</li>
+      <li>Aimbot с выбором костей и FOV</li>
+      <li>Полная кастомизация цветов</li>
+    </ul>
+  </div>
+
+  <h3>Системные требования</h3>
+  <div class="block">
+    <ul>
+      <li>Windows 10 / 11</li>
+      <li>Процессор: AMD</li>
+      <li>Античит: ACE</li>
+      <li>OBS Bypass: Да</li>
+    </ul>
+  </div>
+
+  <h3>Планы подписки</h3>
+
+<div class="subs">
+  <div class="sub">
+    <h5>На 5 часов</h5>
+    <div class="p">60₽</div>
+    <button onclick="location.href='https://t.me/INFXTEAMbot'">Купить</button>
+  </div>
+
+  <div class="sub">
+    <h5>На 1 день</h5>
+    <div class="p">150₽</div>
+    <button onclick="location.href='https://t.me/INFXTEAMbot'">Купить</button>
+  </div>
+
+  <div class="sub">
+    <h5>На 3 дня</h5>
+    <div class="p">450₽</div>
+    <button onclick="location.href='https://t.me/INFXTEAMbot'">Купить</button>
+  </div>
+
+  <div class="sub">
+    <h5>На 7 дней</h5>
+    <div class="p">800₽</div>
+    <button onclick="location.href='https://t.me/INFXTEAMbot'">Купить</button>
+  </div>
+
+  <div class="sub">
+    <h5>На 14 дней</h5>
+    <div class="p">1300₽</div>
+    <button onclick="location.href='https://t.me/INFXTEAMbot'">Купить</button>
+  </div>
+
+  <div class="sub">
+    <h5>На 30 дней</h5>
+    <div class="p">2000₽</div>
+    <button onclick="location.href='https://t.me/INFXTEAMbot'">Купить</button>
+  </div>
+</div>
+
+
+<footer>© 2024 INFXCHEAT</footer>
+</body>
+</html>
